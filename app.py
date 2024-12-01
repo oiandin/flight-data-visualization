@@ -38,6 +38,9 @@ airline = st.sidebar.multiselect("Pesawat", sorted_airline)
 if airline:
     df = df[df["AIRLINE"].isin(airline)]
 
+st.sidebar.html(body)
+body = '<p>Build with <3 by Putri Roro Andini and Team</p> </br> <a href="https://github.com/oiandin/">Visit my github</a> '
+
 # Card
 total_airport = df["AIRPORT"].nunique()
 total_airline = df["AIRLINE"].nunique()
